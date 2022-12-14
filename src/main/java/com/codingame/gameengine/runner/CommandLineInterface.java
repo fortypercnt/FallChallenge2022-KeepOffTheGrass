@@ -42,7 +42,7 @@ public class CommandLineInterface {
             MultiplayerGameRunner gameRunner = new MultiplayerGameRunner();
 
             //Choose league level
-            //gameRunner.setLeagueLevel(3);
+            gameRunner.setLeagueLevel(2);
 
             if (cmd.hasOption("d")) {
                 String[] parse = cmd.getOptionValue("d").split("=", 0);
