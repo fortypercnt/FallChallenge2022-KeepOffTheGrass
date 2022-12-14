@@ -34,7 +34,7 @@ If you don't remove the node_modules directory then maven will add the whole lot
 4. The compiled jar is ./target/fall-challenge-2022-keep-off-the-grass-1.0-SNAPSHOT-shaded.jar
 
 ## How to run
-Only tested with JRE 11. Later versions seem to cause errors.
+Use JRE 8 to avoid warnings/errors. JRE 11 works but with warnings. Later versions cause errors.
 
 ```
 usage: -p1 <player1 command line> -p2 <player2 command line> [-s -l <File
@@ -50,5 +50,5 @@ usage: -p1 <player1 command line> -p2 <player2 command line> [-s -l <File
 E.g., to run the referee and watch the game in the browser:
 
 ```
-java -jar .\fall22.jar -p1 "python bot1.py" -p2 "python bot2.py" -s
+java -jar ./fall22.jar -p1 "python bot1.py" -p2 "python bot2.py" -s
 ```
